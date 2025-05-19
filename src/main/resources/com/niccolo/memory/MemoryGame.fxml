@@ -1,14 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.niccolo.memory.controller.MemoryGameController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niccolo.memory.controller.MemoryGameController">
+   <children>
+      <VBox layoutX="368.0" layoutY="160.0" prefHeight="900.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" vgap="20.0">
+               <children>
+                  <ImageView fitHeight="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="322.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="286.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="424.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="562.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="700.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="838.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="976.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="1114.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="10.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="286.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="18.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="176.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="334.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="492.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="650.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="808.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="966.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" layoutX="1124.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/2_of_clubs.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </FlowPane>
+            <HBox alignment="CENTER" spacing="950.0">
+               <children>
+                  <GridPane prefHeight="130.0" prefWidth="202.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="820.0" minWidth="10.0" prefWidth="820.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1117.0" minWidth="10.0" prefWidth="420.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Guesses:" textFill="WHITE" />
+                        <Label text="Correct:" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label text="0" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </GridPane>
+                  <Label text="00:00" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

@@ -4,8 +4,7 @@ module com.niccolo.memory {
     requires static lombok;
 
 
-    opens com.niccolo.memory to javafx.fxml;
+    opens com.niccolo.memory.controller to javafx.fxml;
     exports com.niccolo.memory;
     exports com.niccolo.memory.model;
-    opens com.niccolo.memory.model to javafx.fxml;
 }
