@@ -6,4 +6,6 @@ module com.niccolo.memory {
 
     opens com.niccolo.memory to javafx.fxml;
     exports com.niccolo.memory;
+    exports com.niccolo.memory.model;
+    opens com.niccolo.memory.model to javafx.fxml;
 }

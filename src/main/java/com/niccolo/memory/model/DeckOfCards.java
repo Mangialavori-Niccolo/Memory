@@ -1,4 +1,4 @@
-package com.niccolo.memory;
+package com.niccolo.memory.model;
 
 import lombok.Getter;
 import lombok.Setter;
