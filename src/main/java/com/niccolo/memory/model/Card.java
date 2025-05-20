@@ -1,5 +1,6 @@
 package com.niccolo.memory.model;
 
+import javafx.scene.image.Image;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,5 +34,14 @@ public class Card {
     @Override
     public String toString() {
         return faceName + " of " + suit;
+    }
+
+    public Image getImage(){
+        String path = "/com/niccolo/memory/images/" + faceName.getFilenamePart() + "_of_" + suit + ".png";
+        return new Image(Card.class.getResourceAsStream(path));
+    }
+
+    public static Image getBackOfCard(){
+        return new Image(Card.class.getResourceAsStream("/com/niccolo/memory/images/back_of_card.png"));
     }
 }
