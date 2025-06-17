@@ -3,10 +3,8 @@ package com.niccolo.memory.controller;
 import com.niccolo.memory.model.Card;
 import com.niccolo.memory.model.DeckOfCards;
 import com.niccolo.memory.model.MemoryCard;
-import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.FlowPane;
@@ -16,6 +14,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+
 import javafx.event.ActionEvent;
 
 public class MemoryGameController implements Initializable {
@@ -28,9 +28,6 @@ public class MemoryGameController implements Initializable {
 
     @FXML
     private FlowPane imagesFlowPane;
-
-    @FXML
-    private Button restartButton;
 
     @FXML
     private Label timer;
@@ -76,7 +73,7 @@ public class MemoryGameController implements Initializable {
 
             @Override
             public void handle(long now) {
-                long enlapsedSeconds = (now - startTime) / 1_000_000_000;
+                long enlapsedSeconds = TimeUnit.NANOSECONDS.toSeconds(now - startTime);
                 long minutes = enlapsedSeconds / 60;
                 long seconds = enlapsedSeconds % 60;
 
@@ -87,7 +84,7 @@ public class MemoryGameController implements Initializable {
 
 
     @FXML
-    private void restart(ActionEvent event){
+    private void restart(ActionEvent ignoredEvent){
         //Azzero le variabili
         numGuesses = 0;
         numCorrect = 0;
@@ -176,6 +173,10 @@ public class MemoryGameController implements Initializable {
         }
         firstCardClicked = null;
         secondCardClicked = null;
+
+        if(numCorrect == imagesFlowPane.getChildren().size()/2){
+            animationTimer.stop();
+        }
     }
 
     /**
