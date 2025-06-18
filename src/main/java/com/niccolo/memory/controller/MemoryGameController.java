@@ -141,6 +141,7 @@ public class MemoryGameController implements Initializable {
             imageView.setImage(firstCardClicked.getImage());
         }
         else if (secondCardClicked == null){
+            if(cardsActive.get(index) == firstCardClicked) return;
             numGuesses++;
             secondCardClicked = cardsActive.get(index);
             imageView.setImage(secondCardClicked.getImage());

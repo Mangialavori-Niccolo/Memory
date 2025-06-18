@@ -16,6 +16,7 @@ public class MemoryCard extends Card{
     }
 
     public boolean isSameCard(MemoryCard card){
+        if(this == card) return false;
         return this.equals(card);
     }
 
