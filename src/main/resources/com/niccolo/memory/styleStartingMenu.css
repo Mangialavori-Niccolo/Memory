@@ -1,0 +1,12 @@
+.text-field{
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 35px;
+    -fx-font-family: "Times New Roman";
+}
